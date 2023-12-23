@@ -1,6 +1,6 @@
 function isEnoughCapacity(argomes,expanded){
-    const viva = Object.values(argomes);
-    const sum = viva.reduce((a,b) =>{
+    const valueArray = Object.values(argomes);
+    const sum = valueArray.reduce((a,b) =>{
         return a+b; 
     },0)
     let control = true;

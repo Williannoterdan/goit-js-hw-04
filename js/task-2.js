@@ -4,13 +4,13 @@ function calcAverageCalories(argomes){
     }
     const newArgomes = argomes.flatMap(argomes => argomes.calories);
     // console.log(newArgomes);
-    const viva = Object.values(newArgomes);
-    const sum = viva.reduce((a,b) =>{
+    const valueArray = Object.values(newArgomes);
+    const sum = valueArray.reduce((a,b) =>{
         return a+b; 
     },0)
     
     // console.log(sum);
-    const medianaCalori = sum/viva.length;
+    const medianaCalori = sum/valueArray.length;
     return medianaCalori;
 }
 
